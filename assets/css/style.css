@@ -1,0 +1,178 @@
+body {
+    background-color: #e5e5e5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title {
+    font-family: 'Aladin', cursive;
+    font-size: 64px;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+nav {
+    margin-right: 200px;
+    margin-top: 80px;
+}
+
+#current-page {
+    color: #000000;
+    text-decoration: underline;
+}
+
+nav a {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 70px;
+    color: #5679A1;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+/* about page */
+
+#about-content {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 60px;
+}
+
+#hello {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 36px;
+    color: #5679A1;
+}
+
+#sub {
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 12px;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#picture-row {
+    display: flex;
+    margin-top: 100px;
+}
+
+#picture-row img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.picture-set {
+    position: relative;
+}
+
+.overlay-text {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 36px;
+    color: #e5e5e5;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    display: none;
+}
+
+#overlay1, #overlay2, #overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 50%;
+}
+
+#about-content a {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 24px;
+    color: #5679A1;
+}
+
+#explore {
+    margin-top: 60px;
+}
+
+/* work page */
+
+#work-content {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    position: relative;
+}
+
+#controls {
+    position: absolute;
+    top: 185px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button img {
+    cursor: pointer;
+    height: 48px;
+}
+
+#button-prev {
+    margin-left: 24px;
+    visibility: hidden;
+}
+
+#button-next {
+    margin-right: 24px;
+    visibility: visible;
+}
+
+#carousel {
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#carousel-row {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.carousel-object img {
+    height: 420px;
+    margin-bottom: 24px;
+}
+
+.carousel-text1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 24px;
+}
+
+.carousel-text2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    width: 75%;
+}
