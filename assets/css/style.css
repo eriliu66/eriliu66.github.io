@@ -20,15 +20,13 @@ nav {
 }
 
 #current-page {
-    color: #000000;
-    text-decoration: underline;
+    color: #5679A1;
 }
 
 nav a {
     font-family: 'Berkshire Swash', cursive;
     font-size: 24px;
     text-decoration: none;
-    margin-left: 70px;
     color: #5679A1;
 }
 
@@ -36,15 +34,107 @@ nav a:hover {
     color: #000000;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.dd-button {
+    color: black;
+    font-family: 'Berkshire Swash';
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+.dd-button:hover {
+    color: #5679A1;
+    cursor: pointer;
+}
+
+.dd-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    /*box-shadow: 0px 8px 16px 0px #b2b2b2;*/
+    border-radius: 10%;
+    left: -15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.dd-content a {
+    display: block;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.dropdown:hover .dd-content {display: block;}
+
 /* about page */
 
 #about-content {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #hello {
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.pic-set {
+    margin-top: 48px;
+    position: relative;
+}
+
+#img1, #img2, #img3 {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#about-content img {
+    max-width: 200px;
+}
+
+#about-content img:hover {
+    cursor: pointer;
+}
+
+.pic-description {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pic-description:hover {
+    cursor: pointer;
+}
+
+#social {
+    margin-top: 60px;
+}
+
+#social img {
+    height: 36px;
+}
+
+/*#hello {
     font-family: 'Berkshire Swash', cursive;
     font-size: 36px;
     color: #5679A1;
@@ -108,16 +198,17 @@ nav a:hover {
 
 #explore {
     margin-top: 60px;
-}
+} */
 
 /* work page */
 
 #work-content {
-    max-width: 1150px;
+    max-width: 2050px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
     position: relative;
+    width: 80%;
 }
 
 #controls {
@@ -134,12 +225,12 @@ nav a:hover {
 }
 
 #button-prev {
-    margin-left: 24px;
+    /*margin-left: 48px;*/
     visibility: hidden;
 }
 
 #button-next {
-    margin-right: 24px;
+    /*margin-right: 48px;*/
     visibility: visible;
 }
 
@@ -176,3 +267,8 @@ nav a:hover {
     font-weight: 400;
     width: 75%;
 }
+
+/*.outlined-image {
+    border: 2px solid #5679A1;
+    border-right: 0px;
+}*/
